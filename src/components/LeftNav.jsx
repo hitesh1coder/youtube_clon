@@ -42,8 +42,8 @@ const LeftNav = () => {
                   clickHandler(item.name, item.type);
                   navigate("/");
                 }}
-                className={`${
-                  selectedCategories === item.name ? "border-white/[0.15]" : ""
+                isSelected={`${
+                  selectedCategories === item.name ? "border-2" : ""
                 }`}
               />
               {item.divider && <hr className="my-5 border-white/[0.2]" />}
